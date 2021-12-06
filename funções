@@ -1,0 +1,15 @@
+#uso das funções
+lista = [0, 5, 10, 15, 20, 25, 30]
+#função local def 
+def filtro(numero):
+  if numero > 10 :
+    return True
+  return False
+
+lista_filtrada = filter(filtro, lista)
+print(list(lista_filtrada))
+
+#função lambda ou função anonima.
+lita_filtrada1 = filter(lambda numero: numero > 10, lista)
+print(list(lita_filtrada1))
+
